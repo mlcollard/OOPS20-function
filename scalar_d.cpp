@@ -33,6 +33,17 @@ int main() {
         assert(pay(-10.0, -15.0) == -1);
     }
 
+    {
+    	double amount;
+    	assert(pay(10.0, 15.0, amount) == 0);
+    	assert(amount == 150.0);
+
+        // assert(pay(10.0, 15.0) == 150.0);
+        // assert(pay(-10.0, 15.0) == -1);
+        // assert(pay(10.0, -15.0) == -1);
+        // assert(pay(-10.0, -15.0) == -1);
+    }
+
     return 0;
 }
 

@@ -13,4 +13,7 @@ double average(int, int);
 // pay based on hours and rate
 double pay(double hours, double rate);
 
+// pay based on hours and rate
+int pay(double hours, double rate, double& amount);
+
 #endif
