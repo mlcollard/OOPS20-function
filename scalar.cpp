@@ -42,6 +42,23 @@ int pay(double hours, double rate, double& amount) {
     return 0;
 }
 
+// order two integers
+void order(int& n1, int& n2) {
+
+    if (n1 > n2) {
+        auto t = n1;
+        n1 = n2;
+        n2 = t;
+    }
+}
+
+// order two integers in a vector
+void order(std::vector<int>& v, int index1, int index2) {
+
+    order(v[index1], v[index2]);
+}
+
+
 
 
 

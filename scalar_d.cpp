@@ -12,6 +12,7 @@
 
 #include <cassert>
 #include "scalar.hpp"
+#include <vector>
 
 int main() {
 
@@ -42,6 +43,24 @@ int main() {
         // assert(pay(-10.0, 15.0) == -1);
         // assert(pay(10.0, -15.0) == -1);
         // assert(pay(-10.0, -15.0) == -1);
+    }
+
+    {
+    	int n1 = 5;
+    	int n2 = 4;
+    	order(n1, n2);
+    	assert(n1 == 4);
+    	assert(n2 == 5);
+    }
+
+    {
+    	std::vector<int> v{ 5, 4 };
+
+    	order(v[0], v[1]);
+
+    	order(v, 0, 1);
+
+
     }
 
     return 0;
