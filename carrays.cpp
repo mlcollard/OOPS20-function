@@ -15,3 +15,15 @@ double average(int ar[], int size) {
 
     return (double) total / size;
 }
+
+// average of elements from begin to end
+double average(int* begin, int* end) {
+
+    int total = 0;
+    for (auto p = begin; p != end; ++p)
+        total += *p;
+
+    int size = end - begin;
+
+    return (double) total / size;
+}
