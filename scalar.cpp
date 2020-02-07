@@ -57,12 +57,3 @@ void order(std::vector<int>& v, int index1, int index2) {
 
     order(v[index1], v[index2]);
 }
-
-
-
-
-
-
-
-
-
